@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.1.0</PackageVersion>
+        <Title>EnkaAPI</Title>
+        <Description>https://enka.network .NET API wrapper</Description>
+        <Copyright>Copyright (c) Alexander 2022</Copyright>
+        <LangVersion>11</LangVersion>
+        <Authors>Satan1c</Authors>
+        <PackageTags>enka genshin api</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="RateLimiter" Version="2.2.0" />
+    </ItemGroup>
+
+</Project>
